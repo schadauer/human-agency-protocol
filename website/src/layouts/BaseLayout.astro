@@ -1,0 +1,139 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "A global protocol for strengthening human agency in AI-native systems, without sharing content." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Human Agency Protocol</a>
+            <ul>
+                <li><a href="/protocol">Protocol</a></li>
+                <li><a href="/service">Service</a></li>
+                <li><a href="/governance">Governance</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <slot />
+
+    <footer id="about">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Protocol</h4>
+                <ul>
+                    <li><a href="/protocol">Overview</a></li>
+                    <li><a href="/protocol#inquiry-ladder">Inquiry Ladder</a></li>
+                    <li><a href="/protocol#blueprints">Blueprints</a></li>
+                    <li><a href="/protocol#signals">Signal Guides</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Implementation</h4>
+                <ul>
+                    <li><a href="/service">Service API</a></li>
+                    <li><a href="/service#architecture">Architecture</a></li>
+                    <li><a href="/service#privacy">Privacy Model</a></li>
+                    <li><a href="/service#registry">Registry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="/governance">Governance</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="https://github.com">GitHub</a></li>
+                    <li><a href="/about#contribute">Contribute</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="/about#why">Why HAP exists</a></li>
+                    <li><a href="/about#team">Team</a></li>
+                    <li><a href="/about#adopters">Adopters</a></li>
+                    <li><a href="/about#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>The Human Agency Protocol is open infrastructure. Licensed under MIT. Maintained by stewards, not owners.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<style>
+    footer {
+        max-width: 1200px;
+        margin: 8rem auto 0;
+        padding: 4rem 2rem;
+        border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
+    }
+
+    .footer-section h4 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
+
+    .footer-section ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-section a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: color 0.2s;
+    }
+
+    .footer-section a:hover {
+        color: var(--accent);
+    }
+
+    .footer-bottom {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+        color: var(--text-tertiary);
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            margin-top: 4rem;
+        }
+    }
+</style>

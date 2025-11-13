@@ -1,0 +1,251 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Human Agency Protocol — Infrastructure for Choice in the Age of Automation">
+    <section class="hero">
+        <div class="version">Version 0.1 — November 2025</div>
+        <h1>When AI can do everything, the scarce thing becomes <span class="highlight">knowing what's worth doing</span></h1>
+        <p class="subtitle">
+            A global protocol that helps systems strengthen human agency—without ever sharing your content.
+            Infrastructure for choice in the age of automation.
+        </p>
+        <div class="cta-group">
+            <a href="/protocol" class="btn btn-primary">Explore the Protocol</a>
+            <a href="/about" class="btn btn-secondary">Why we built this</a>
+        </div>
+    </section>
+
+    <section class="principles">
+        <div class="section-label">Foundation</div>
+        <h2 class="section-title">Three principles that change everything</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Inquiry Keeps Agency</h3>
+                <p>
+                    HAP inserts structured questions at the critical junctures so people—not models—decide meaning, purpose, and action. Automation pauses until humans respond.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Privacy-First Architecture</h3>
+                <p>
+                    No transcripts. No personal data. No content storage.
+                    Only structural signals that measure recognition and alignment—while your context stays sealed.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Open Governance</h3>
+                <p>
+                    A shared protocol maintained by stewards, not owners. Transparent blueprints. Participatory evolution. Infrastructure for collective autonomy.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="protocol-nav" id="protocol">
+        <div class="section-label">Documentation</div>
+        <h2 class="section-title">Explore the complete specification</h2>
+
+        <div class="protocol-links">
+            <a href="/protocol" class="protocol-link">
+                <div class="label">Core</div>
+                <h3>The Protocol</h3>
+                <p>The foundational specification defining how agency can be described, measured, and exchanged in AI-native systems.</p>
+                <div class="arrow">Read the protocol →</div>
+            </a>
+
+            <a href="/service" class="protocol-link">
+                <div class="label">Implementation</div>
+                <h3>Service Layer</h3>
+                <p>Technical specification for the HAP Service—centralized infrastructure for running HAP-compliant systems at scale.</p>
+                <div class="arrow">View architecture →</div>
+            </a>
+
+            <a href="/governance" class="protocol-link">
+                <div class="label">Adoption</div>
+                <h3>Governance Proposal</h3>
+                <p>Regional adoption assessment examining how HAP can be integrated into regulatory frameworks with enforcement mechanisms.</p>
+                <div class="arrow">Read assessment →</div>
+            </a>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .hero {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 12rem 2rem 8rem;
+        min-height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 6vw, 4.5rem);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        max-width: 900px;
+        margin-bottom: 2rem;
+    }
+
+    .hero .highlight {
+        color: var(--accent);
+        position: relative;
+    }
+
+    .hero .subtitle {
+        font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+        color: var(--text-secondary);
+        max-width: 700px;
+        line-height: 1.6;
+        margin-bottom: 3rem;
+    }
+
+    .hero .version {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: var(--text-tertiary);
+        background: var(--accent-subtle);
+        padding: 0.35rem 0.85rem;
+        border-radius: 2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .cta-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .principles {
+        max-width: 1200px;
+        margin: 8rem auto;
+        padding: 0 2rem;
+    }
+
+    .section-label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--accent);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .section-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin-bottom: 4rem;
+        max-width: 600px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .card {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        padding: 2.5rem;
+        transition: all 0.3s;
+    }
+
+    .card:hover {
+        border-color: var(--accent);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
+
+    .card p {
+        color: var(--text-secondary);
+        line-height: 1.7;
+    }
+
+    .protocol-nav {
+        max-width: 1200px;
+        margin: 8rem auto;
+        padding: 0 2rem;
+    }
+
+    .protocol-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .protocol-link {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border);
+        border-radius: 0.75rem;
+        padding: 2rem;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.2s;
+        display: block;
+    }
+
+    .protocol-link:hover {
+        border-color: var(--accent);
+        background: var(--accent-subtle);
+    }
+
+    .protocol-link .label {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-tertiary);
+        margin-bottom: 0.5rem;
+    }
+
+    .protocol-link h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+
+    .protocol-link p {
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+
+    .protocol-link .arrow {
+        margin-top: 1rem;
+        color: var(--accent);
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            padding-top: 8rem;
+            min-height: auto;
+        }
+
+        .cta-group {
+            flex-direction: column;
+        }
+
+        .btn {
+            text-align: center;
+        }
+    }
+</style>

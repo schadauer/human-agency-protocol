@@ -1,0 +1,24 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  version?: string;
+  date?: string;
+}
+
+const { title, version, date } = Astro.props;
+---
+
+<BaseLayout title={`${title} | Human Agency Protocol`}>
+    <article class="content">
+        <h1>{title}</h1>
+        {(version || date) && (
+            <div class="meta">
+                {version && <span class="version-badge">{version}</span>}
+                {date && <span>{date}</span>}
+            </div>
+        )}
+        <slot />
+    </article>
+</BaseLayout>
