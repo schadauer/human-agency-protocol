@@ -74,7 +74,7 @@ nav {
 nav .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,12 +110,17 @@ nav a:hover {
 .burger {
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 0.35rem;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem;
     z-index: 1001;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
 }
 
 .burger span {
@@ -123,11 +128,19 @@ nav a:hover {
     width: 1.5rem;
     height: 2px;
     background: var(--text-primary);
-    transition: all 0.3s;
+    transition: all 0.3s ease;
+}
+
+.burger.active {
+    gap: 0;
+}
+
+.burger.active span {
+    position: absolute;
 }
 
 .burger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(0.5rem, 0.5rem);
+    transform: rotate(45deg);
 }
 
 .burger.active span:nth-child(2) {
@@ -135,7 +148,7 @@ nav a:hover {
 }
 
 .burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+    transform: rotate(-45deg);
 }
 
 /* Buttons */
@@ -180,7 +193,7 @@ nav a:hover {
 .content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 12rem 2rem 4rem;
+    padding: 12rem 1.5rem 4rem;
 }
 
 .content h1 {
@@ -188,11 +201,27 @@ nav a:hover {
 }
 
 /* Tables */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 2rem 0;
+    -webkit-overflow-scrolling: touch;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 2rem 0;
     font-size: 0.95rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
 
 th {
@@ -289,7 +318,7 @@ hr {
         background: var(--bg-elevated);
         box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
         flex-direction: column;
-        padding: 5rem 2rem 2rem;
+        padding: 5rem 1.5rem 2rem;
         gap: 0;
         z-index: 999;
         transform: translateX(100%);

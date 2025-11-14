@@ -1,6 +1,6 @@
 ---
 title: "The Human Agency Protocol (HAP)"
-version: "v0.1"
+version: "Version 0.1"
 date: "November 2025"
 ---
 
@@ -17,12 +17,10 @@ In a world where everything can be done, the scarce thing becomes: **knowing wha
 It is a **global inquiry protocol** that AI-native, privacy-first systems can call to strengthen human and collective agency — without ever sharing user content.  
 It doesn’t produce answers or actions. It improves the *quality, timing, and structure of questions* that local systems ask — so humans remain in authorship of meaning and direction.
 
-Two first adopters and reference cases:  
-- **Nearmydear** – collective clarity and shared action in groups  
-Candidate:  
-- **The Resonance Room** – individual creative development and reflection  
+First adopter and reference case:
+- **Nearmydear** – collective clarity and shared action in groups
 
-Both rely on the same foundation: an external, neutral layer that provides **Inquiry Blueprints** instead of predefined prompts, allowing each to adapt questions locally while keeping private context sealed.
+Nearmydear demonstrates this foundation: an external, neutral layer that provides **Inquiry Blueprints** instead of predefined prompts, allowing systems to adapt questions locally while keeping private context sealed.
 
 > The Protocol defines *how agency can be described and exchanged*, not *what agency is.*  
 > Each local system interprets and measures “agency gain” according to its own context and mode.

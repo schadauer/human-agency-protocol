@@ -15,8 +15,8 @@ const { title, version, date, nextPage } = Astro.props;
     <article class="content">
         {(version || date) && (
             <div class="version-badge-top">
-                {version && <span>{version}</span>}
-                {date && <span> — {date}</span>}
+                {version && <span class="version-pill">{version}</span>}
+                {date && <span class="version-date">{date}</span>}
             </div>
         )}
         <h1>{title}</h1>
@@ -33,13 +33,24 @@ const { title, version, date, nextPage } = Astro.props;
 
 <style>
     .version-badge-top {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
         font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .version-pill {
+        display: inline-block;
         color: var(--text-tertiary);
         background: var(--accent-subtle);
         padding: 0.35rem 0.85rem;
         border-radius: 2rem;
         font-weight: 500;
-        margin-bottom: 1.5rem;
+    }
+
+    .version-date {
+        color: var(--text-tertiary);
+        font-weight: 400;
     }
 </style>

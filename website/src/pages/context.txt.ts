@@ -56,12 +56,11 @@ The Human Agency Protocol is infrastructure for that world. It is a global inqui
 
 It doesn't produce answers or actions. It improves the quality, timing, and structure of questions that local systems ask—so humans remain in authorship of meaning and direction.
 
-### First Adopters
+### First Adopter
 
 - **Nearmydear** – collective clarity and shared action in groups
-- **The Resonance Room** – individual creative development and reflection
 
-Both rely on the same foundation: an external, neutral layer that provides Inquiry Blueprints instead of predefined prompts, allowing each to adapt questions locally while keeping private context sealed.
+Nearmydear demonstrates this foundation: an external, neutral layer that provides Inquiry Blueprints instead of predefined prompts, allowing systems to adapt questions locally while keeping private context sealed.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "HAP Service Providers"
-version: "v0.1"
+version: "Version 0.1"
 date: "November 2025"
 ---
 

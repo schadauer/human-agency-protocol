@@ -4,14 +4,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout title="Human Agency Protocol — Infrastructure for Choice in the Age of Automation">
     <section class="hero">
-        <div class="version">Version 0.1 — November 2025</div>
+        <div class="version-wrapper">
+            <span class="version">Version 0.1</span>
+            <span class="version-date">November 2025</span>
+        </div>
         <h1>When AI does everything, <span class="highlight">build for human agency</span></h1>
         <p class="subtitle">
             A global protocol that helps AI systems create human value where automation can't — without ever sharing your content.
         </p>
         <div class="cta-group">
             <a href="/protocol" class="btn btn-primary">Explore the Protocol</a>
-            <button id="copy-context" class="btn btn-secondary">Copy as AI Context</button>
+            <button id="copy-context" class="btn btn-secondary">Ask your AI about this protocol</button>
         </div>
     </section>
 
@@ -23,7 +26,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="card">
                 <h3>Inquiry Keeps Agency</h3>
                 <p>
-                    HAP inserts structured questions at the critical junctures so people—not models—decide meaning, purpose, and action. Automation pauses until humans respond.
+                    The protocol inserts structured questions at the critical junctures so people—not models—decide meaning, purpose, and action. Automation pauses until humans respond.
                 </p>
             </div>
 
@@ -77,7 +80,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .hero {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 12rem 2rem 8rem;
+        padding: 12rem 1.5rem 8rem;
         min-height: 85vh;
         display: flex;
         flex-direction: column;
@@ -106,15 +109,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         margin-bottom: 3rem;
     }
 
+    .hero .version-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
     .hero .version {
         display: inline-block;
-        font-size: 0.85rem;
         color: var(--text-tertiary);
         background: var(--accent-subtle);
         padding: 0.35rem 0.85rem;
         border-radius: 2rem;
         font-weight: 500;
-        margin-bottom: 1rem;
+    }
+
+    .hero .version-date {
+        color: var(--text-tertiary);
+        font-weight: 400;
     }
 
     .cta-group {
@@ -126,7 +140,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .principles {
         max-width: 1200px;
         margin: 8rem auto;
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 
     .section-label {
@@ -181,7 +195,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .protocol-nav {
         max-width: 1200px;
         margin: 8rem auto;
-        padding: 0 2rem;
+        padding: 0 1.5rem;
     }
 
     .protocol-links {
@@ -265,10 +279,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             await navigator.clipboard.writeText(text);
 
             // Success feedback
-            button.textContent = 'Copied!';
+            button.textContent = 'Copied! Paste it in your AI Chat';
             setTimeout(() => {
                 if (button) button.textContent = originalText;
-            }, 2000);
+            }, 3000);
         } catch (err) {
             console.error('Failed to copy:', err);
             button.textContent = 'Failed to copy';

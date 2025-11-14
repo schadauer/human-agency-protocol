@@ -51,10 +51,9 @@ What doesn't drop is the value of human agency—the capacity to choose, to set 
 
 HAP is infrastructure for that world.
 
-## First Adopters
+## First Adopter
 
 - **Nearmydear** — collective clarity and shared action in groups
-- **The Resonance Room** — individual creative development and reflection
 
 ## Repository Structure
 
