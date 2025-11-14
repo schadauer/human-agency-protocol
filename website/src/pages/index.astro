@@ -3,50 +3,146 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Human Agency Protocol — Infrastructure for Choice in the Age of Automation">
+    <!-- Hero Section -->
     <section class="hero">
         <div class="version-wrapper">
             <span class="version">Version 0.1</span>
             <span class="version-date">November 2025</span>
         </div>
         <h1>The More AI Shapes Our Lives, the More It Must <span class="highlight">Ask Humans First</span></h1>
-        <p class="subtitle">
-            A protocol that forces AI to ask humans for meaning and direction before acting.
-        </p>
         <div class="cta-group">
             <a href="/protocol" class="btn btn-primary">Explore the Protocol</a>
             <button id="copy-context" class="btn btn-secondary">Ask your AI about this protocol</button>
         </div>
     </section>
 
+    <!-- Why This Matters -->
+    <section class="why-matters">
+        <div class="section-label">The Problem</div>
+        <h2 class="section-title">Why This Matters</h2>
+        <div class="why-content">
+            <p>
+                AI is becoming deeply embedded in daily life.<br>
+                The real risk isn't bad intent—it's AI acting on <strong>unclear or assumed meaning</strong>.
+            </p>
+            <p>
+                The Human Agency Protocol fixes this by enforcing <strong>mandatory human checkpoints</strong>.<br>
+                When meaning drifts or direction becomes uncertain, AI must stop, ask, and wait.<br>
+                It cannot infer. It cannot proceed alone.
+            </p>
+            <p class="emphasis">
+                Humans define the meaning.<br>
+                AI follows it.
+            </p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="section-label">The Mechanism</div>
+        <h2 class="section-title">How It Works</h2>
+        <h3 class="mechanism-title">Stop → Ask → Proceed</h3>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Stop</h4>
+                <p>AI detects ambiguity, drift, or conflicting intent.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Ask</h4>
+                <p>The protocol triggers a structured, human-facing question. The AI must wait for a human answer.</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Proceed</h4>
+                <p>Only after meaning or direction is clarified can the system act.</p>
+            </div>
+        </div>
+
+        <p class="enforcement-statement">This is enforcement, not guidance.</p>
+    </section>
+
+    <!-- Accumulated Inquiry Intelligence -->
+    <section class="intelligence">
+        <div class="section-label">How It Learns</div>
+        <h2 class="section-title-centered">Accumulated Inquiry Intelligence</h2>
+        <p class="intelligence-intro">
+            The protocol doesn't just force AI to ask humans first —<br>
+            it teaches systems <strong>how to ask better</strong> over time.
+        </p>
+
+        <div class="intelligence-grid">
+            <div class="intelligence-card">
+                <h3>What the Protocol Receives</h3>
+                <p class="card-desc">Only structural signals:</p>
+                <ul>
+                    <li>clarity restored?</li>
+                    <li>drift stopped?</li>
+                    <li>turns required?</li>
+                </ul>
+                <p class="privacy-note-small">(No transcripts. No topics. No personal data.)</p>
+            </div>
+
+            <div class="intelligence-card">
+                <h3>What the Protocol Learns</h3>
+                <p class="card-desc">Patterns of effective inquiry:</p>
+                <ul>
+                    <li>which question types resolve drift</li>
+                    <li>where clarity breaks</li>
+                    <li>which signals indicate alignment</li>
+                </ul>
+            </div>
+
+            <div class="intelligence-card">
+                <h3>What Systems Gain</h3>
+                <p class="card-desc">A shared, content-free grammar for better questions:</p>
+                <ul>
+                    <li>better timing</li>
+                    <li>better phrasing</li>
+                    <li>better detection of drift</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="intelligence-conclusion">
+            <strong>AI improves the asking.<br>Humans keep the meaning.</strong>
+        </p>
+    </section>
+
+    <!-- Core Principles -->
     <section class="principles">
         <div class="section-label">Foundation</div>
-        <h2 class="section-title">Three principles that change everything</h2>
+        <h2 class="section-title">Core Principles</h2>
 
         <div class="cards">
             <div class="card">
-                <h3>Inquiry Keeps Agency</h3>
+                <h3>Mandatory Human Checkpoints</h3>
                 <p>
-                    The protocol inserts structured questions at the critical junctures so people—not models—decide meaning, purpose, and action. Automation pauses until humans respond.
+                    AI must pause and ask humans whenever meaning becomes unclear — no assumptions, no bypass.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Privacy-First Architecture</h3>
+                <h3>Privacy by Architecture</h3>
                 <p>
-                    No transcripts. No personal data. No content storage.
-                    Only structural signals that measure recognition and alignment—while your context stays sealed.
+                    Only minimal structural signals leave the system. No transcripts. No personal data. No content exposure.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Open Governance</h3>
+                <h3>Open, Enforced Governance</h3>
                 <p>
-                    A shared protocol maintained by stewards, not owners. Transparent blueprints. Participatory evolution. Infrastructure for collective autonomy.
+                    A transparent protocol maintained by qualified stewards. No owners. No extraction. Compliance required.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Documentation -->
     <section class="protocol-nav" id="protocol">
         <div class="section-label">Documentation</div>
         <h2 class="section-title">Explore the complete specification</h2>
@@ -74,14 +170,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             </a>
         </div>
     </section>
+
 </BaseLayout>
 
 <style>
+    /* Hero Section */
     .hero {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 12rem 1.5rem 8rem;
-        min-height: 85vh;
+        padding: 12rem 1.5rem 6rem;
+        min-height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -93,20 +191,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         line-height: 1.1;
         letter-spacing: -0.03em;
         max-width: 900px;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .hero .highlight {
         color: var(--accent);
-        position: relative;
-    }
-
-    .hero .subtitle {
-        font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-        color: var(--text-secondary);
-        max-width: 700px;
-        line-height: 1.6;
-        margin-bottom: 3rem;
     }
 
     .hero .version-wrapper {
@@ -137,12 +226,182 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         flex-wrap: wrap;
     }
 
-    .principles {
+    /* Why This Matters */
+    .why-matters {
+        max-width: 1200px;
+        margin: 6rem auto;
+        padding: 0 1.5rem;
+    }
+
+    .why-content {
+        max-width: 800px;
+    }
+
+    .why-content p {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        line-height: 1.8;
+        margin-bottom: 2rem;
+        color: var(--text-primary);
+    }
+
+    .why-content .emphasis {
+        font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+        font-weight: 600;
+        color: var(--accent);
+        margin-top: 3rem;
+    }
+
+    /* How It Works */
+    .how-it-works {
         max-width: 1200px;
         margin: 8rem auto;
         padding: 0 1.5rem;
     }
 
+    .mechanism-title {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 600;
+        color: var(--accent);
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+
+    .steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .step {
+        background: var(--bg-elevated);
+        border: 2px solid var(--border);
+        border-radius: 1rem;
+        padding: 2.5rem 2rem;
+        text-align: center;
+        transition: all 0.3s;
+    }
+
+    .step:hover {
+        border-color: var(--accent);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .step-number {
+        width: 3rem;
+        height: 3rem;
+        background: var(--accent);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 auto 1.5rem;
+    }
+
+    .step h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
+
+    .step p {
+        color: var(--text-secondary);
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    .enforcement-statement {
+        font-size: clamp(1.2rem, 2vw, 1.4rem);
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-top: 2rem;
+    }
+
+    /* Intelligence Section */
+    .intelligence {
+        max-width: 1200px;
+        margin: 8rem auto;
+        padding: 0 1.5rem;
+    }
+
+    .section-title-centered {
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        margin-bottom: 2rem;
+    }
+
+    .intelligence-intro {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        max-width: 900px;
+        margin: 0 0 4rem;
+        color: var(--text-primary);
+    }
+
+    .intelligence-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .intelligence-card {
+        background: var(--bg-elevated);
+        border: 1px solid var(--border);
+        border-radius: 1rem;
+        padding: 2.5rem;
+    }
+
+    .intelligence-card h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-primary);
+    }
+
+    .intelligence-card .card-desc {
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .intelligence-card ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .intelligence-card li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--border);
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+    }
+
+    .intelligence-card li:last-child {
+        border-bottom: none;
+    }
+
+    .privacy-note-small {
+        margin-top: 1.5rem;
+        color: var(--text-tertiary);
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+
+    .intelligence-conclusion {
+        font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+        font-weight: 600;
+        color: var(--accent);
+        margin-top: 3rem;
+    }
+
+    /* Shared Styles */
     .section-label {
         font-size: 0.85rem;
         text-transform: uppercase;
@@ -158,6 +417,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         letter-spacing: -0.02em;
         margin-bottom: 4rem;
         max-width: 600px;
+    }
+
+    /* Principles */
+    .principles {
+        max-width: 1200px;
+        margin: 8rem auto;
+        padding: 0 1.5rem;
     }
 
     .cards {
@@ -192,6 +458,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         line-height: 1.7;
     }
 
+    /* Documentation */
     .protocol-nav {
         max-width: 1200px;
         margin: 8rem auto;
@@ -247,6 +514,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         font-weight: 600;
     }
 
+    /* Responsive */
     @media (max-width: 768px) {
         .hero {
             padding-top: 8rem;
@@ -259,6 +527,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         .btn {
             text-align: center;
+        }
+
+        .why-matters,
+        .how-it-works,
+        .intelligence,
+        .principles {
+            margin: 4rem auto;
+        }
+
+        .steps {
+            grid-template-columns: 1fr;
+        }
+
+        .intelligence-grid {
+            grid-template-columns: 1fr;
         }
     }
 </style>
