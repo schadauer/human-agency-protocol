@@ -158,7 +158,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .hero .version {
         display: inline-block;
         color: var(--text-tertiary);
-        background: var(--accent-subtle);
+        background: var(--bg-elevated);
+        border: 1px solid var(--border);
         padding: 0.35rem 0.85rem;
         border-radius: 2rem;
         font-weight: 500;
@@ -228,14 +229,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         border-radius: 1rem;
         padding: 2.5rem 2rem;
         text-align: center;
-        transition: all 0.3s;
     }
 
-    .step:hover {
-        border-color: var(--accent);
-        transform: translateY(-4px);
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-    }
 
     .step-number {
         width: 3rem;
@@ -386,13 +381,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         border: 1px solid var(--border);
         border-radius: 1rem;
         padding: 2.5rem;
-        transition: all 0.3s;
-    }
-
-    .card:hover {
-        border-color: var(--accent);
-        transform: translateY(-4px);
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
     }
 
     .card h3 {
@@ -428,13 +416,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         padding: 2rem;
         text-decoration: none;
         color: inherit;
-        transition: all 0.2s;
+        transition: all 0.3s;
         display: block;
     }
 
     .protocol-link:hover {
         border-color: var(--accent);
         background: var(--accent-subtle);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .protocol-link:hover {
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
     }
 
     .protocol-link .label {

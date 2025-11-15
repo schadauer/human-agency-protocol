@@ -7,6 +7,7 @@ interface Props {
 }
 
 const { title, description = "A global protocol for strengthening human agency in AI-native systems, without sharing content." } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <!DOCTYPE html>
@@ -27,9 +28,9 @@ const { title, description = "A global protocol for strengthening human agency i
                 <span></span>
             </button>
             <ul id="nav-menu">
-                <li><a href="/protocol">Protocol</a></li>
-                <li><a href="/service">Service Providers</a></li>
-                <li><a href="/governance">Governance</a></li>
+                <li><a href="/protocol" class={currentPath.startsWith('/protocol') ? 'active' : ''}>Protocol</a></li>
+                <li><a href="/service" class={currentPath.startsWith('/service') ? 'active' : ''}>Service Providers</a></li>
+                <li><a href="/governance" class={currentPath.startsWith('/governance') ? 'active' : ''}>Governance</a></li>
             </ul>
         </div>
     </nav>
