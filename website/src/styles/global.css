@@ -234,7 +234,7 @@ nav a.active {
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.95rem;
+    font-size: 1rem;
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -272,7 +272,7 @@ code {
     border: 1px solid var(--border);
     padding: 0.2rem 0.4rem;
     border-radius: 0.25rem;
-    font-size: 0.9em;
+    font-size: 1em;
     font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
 }
 
@@ -283,12 +283,14 @@ pre {
     border-radius: 0.5rem;
     overflow-x: auto;
     margin: 2rem 0;
+    font-size: 1rem;
 }
 
 pre code {
     background: none;
     border: none;
     padding: 0;
+    font-size: 1rem;
 }
 
 /* Blockquotes */
@@ -375,7 +377,7 @@ hr {
     }
 
     table {
-        font-size: 0.85rem;
+        font-size: 1rem;
     }
 
     th, td {
